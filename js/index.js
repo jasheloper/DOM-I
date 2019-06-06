@@ -37,6 +37,79 @@ const siteContent = {
   },
 };
 
-// Example: Update the img src for the logo
+
+
+let navA = document.getElementsByTagName ('a');
 let logo = document.getElementById("logo-img");
+let header = document.querySelector('h1');
+let button = document.querySelector('.cta button');
+let ctaImg = document.getElementById("cta-img");
+let main = document.querySelectorAll("h4");
+let paragraph = document.querySelectorAll("p");
+let middleImg = document.getElementById("middle-img");
+let theContact = document.querySelector(".contact h4");
+let contactP = document.querySelectorAll(".contact p");
+let footer = document.querySelector("footer p")
+
+
+
+
+// nav
+navA[0].textContent = siteContent.nav["nav-item-1"];
+navA[1].textContent = siteContent.nav["nav-item-2"];
+navA[2].textContent = siteContent.nav["nav-item-3"];
+navA[3].textContent = siteContent.nav["nav-item-4"];
+navA[4].textContent = siteContent.nav["nav-item-5"];
+
+
+
+
+// Example: Update the img src for the logo
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+
+// CTA
+header.textContent = siteContent.cta["h1"];
+button.textContent = siteContent.cta["button"];
+ctaImg.setAttribute('src', siteContent ["cta"]["img-src"])
+
+
+// Main Content Headers
+main[0].textContent = siteContent["main-content"]["features-h4"];
+main[1].textContent = siteContent["main-content"]["about-h4"];
+main[2].textContent = siteContent["main-content"]["services-h4"];
+main[3].textContent = siteContent["main-content"]["product-h4"];
+main[4].textContent = siteContent["main-content"]["vision-h4"];
+
+
+// Middle Img
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+
+// Main Content Paragraphs
+paragraph[0].textContent = siteContent["main-content"]["features-content"];
+
+paragraph[1].textContent = siteContent["main-content"]["features-content"];
+
+paragraph[2].textContent = siteContent["main-content"]["features-content"];
+
+paragraph[3].textContent = siteContent["main-content"]["features-content"];
+
+paragraph[4].textContent = siteContent["main-content"]["features-content"];
+
+
+// Contact Header
+theContact.textContent = siteContent["contact"]["contact-h4"];
+
+// Contact Paragraph
+contactP[0].textContent = siteContent ["contact"]["address"];
+contactP[1].textContent = siteContent ["contact"]["phone"];
+contactP[2].textContent = siteContent ["contact"]["email"];
+
+// Footer 
+footer.textContent = siteContent ["footer"]["copyright"];
+
+
+
+
