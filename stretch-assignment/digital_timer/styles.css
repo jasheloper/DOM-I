@@ -1,14 +1,27 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #d9b3ff;
+}
+.name {
+  color: white;
+  font-family: verdana;
+  padding: 2em;
+  line-height: 3em;
+  text-align: center;
+}
+
+#digits {
+  background-color: white;
+  padding: 1em;
+  border: 2px solid black;
 }
 
 .digit {
   display: inline-block;
-  font-size: 80px;
+  font-size: 60px;
+  color: black;
 }
 
-.redDigit {
-  color: red;
-}
